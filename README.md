@@ -1,16 +1,61 @@
-# React + Vite
+# Currency Converter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple currency converter built using **React + Vite**, designed as a small practice project to understand hooks, custom hooks, API fetching, and Tailwind styling.
 
-Currently, two official plugins are available:
+**Live Demo:** https://arisha-currency-converter.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Convert any amount between currencies
+- Real-time exchange rates using API
+- Swap `From` and `To` currencies with one click
+- Clean UI with Tailwind CSS
+- Responsive layout for all screens
+- Custom hook for currency data (`useCurrencyInfo`)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+| Technology | Use |
+|----------|------|
+| React | UI + Components |
+| Vite | Development environment |
+| Tailwind CSS | Styling |
+| Custom Hooks | Logic separation |
+
+---
+
+
+## The app fetches data from:  
+> `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/{from}.json`  
+> Fallback endpoint (recommended): `https://latest.currency-api.pages.dev/v1/currencies/{from}.json`
+
+---
+
+## 🔧 Run Locally
+
+```bash
+# Clone this repository
+git clone https://github.com/your-username/currency-converter.git
+
+# Navigate to project
+cd currency-converter
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev```
+```
+---
+
+## What I Practiced
+- State management with useState
+- Side effects with useEffect
+- Building reusable components (InputBox)
+- Creating a custom hook for data fetching (useCurrencyInfo)
+- Handling loading states
+- Responsive UI design with Tailwind
